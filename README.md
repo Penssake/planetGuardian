@@ -1,11 +1,11 @@
-#planetGuardian
-*Captain planet inspired playground.
-Practice site.*
+# planetGuardian
+* Captain planet inspired playground.
+Practice site.
 
-##WIREFRAME/OUTLINE
+## WIREFRAME/OUTLINE
 
-##UI/UX
+## UI/UX
 
-**Splash**
+** Splash **
 * [logo]
-  * 
+  * THING 2

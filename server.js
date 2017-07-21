@@ -12,6 +12,7 @@ app.get('/index', (req, res) => {
   res.sendFile('index.html', { root: './public' });
 });
 
+//middleware plugins
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('.'));

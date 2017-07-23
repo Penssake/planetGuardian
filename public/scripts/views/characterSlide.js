@@ -7,11 +7,16 @@
 // })
 
 (function(module) {
+  document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    DisplayCharacter(charactersObj);
+  });
 
-let registrationForm = document.getElementById('form');
-registrationForm.submit(preventDefault(), DisplayCharacter());
-
-function DisplayCharacter() {
-    console.log('You did it!');
-  }
-});
+  function DisplayCharacter(charactersObj) {
+    this.name = charactersObj.name;
+    this.img = charactersObj.img;
+    this.description = charactersObj.description;
+    var currentCharacter = [];
+    currentCharacter.push(this);
+  };
+}(window));

@@ -6,14 +6,17 @@
     <title>Captain Planet Inspired Playground - Practice Site - Educational/Meetup API</title>
   </head>
   <body>
+    <header>
+      <h1>planetGuardian</h1>
+      <h3>Join the resistance.</h3>
+    </header>
 
-    <fieldset class="registrationField">
-      <legend>Register</legend>
-      <label class="newMemberFormInput">Name</label><input></input>
-      <label class="newMemberFormInput">Email</label><input></input>
-      <label class="newMemberFormInput">Password</label><input></input>
-      <button>Submit</button>
-    </fieldset>
+    <form id="form" method="get">
+      Name: <input type="text" name="name"><br>
+      Email: <input type="email" name="email"><br>
+      Password: <input type="password" name="password"></br>
+      <input type="submit" value="Submit">
+    </form>
 
     <div class="characterSlot"></div>
 
@@ -32,5 +35,6 @@
       <img class="characterSelection" src="images/tempImage.jpg" />
     </fieldset>  -->
 
+    <script src="scripts/views/characterSlide.js"></script>
   </body>
 </html>

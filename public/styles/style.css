@@ -1,0 +1,14 @@
+/*Temp character slider photo styles*/
+
+.characterField {
+  width: 80%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.characterSelection {
+  width: 100%;
+  height: 100%;
+  display: inline;
+  overflow: hidden;
+}

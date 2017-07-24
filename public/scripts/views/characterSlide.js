@@ -13,9 +13,10 @@
   });
 
   function DisplayCharacter(charactersObj) {
-    this.name = charactersObj.name;
-    this.img = charactersObj.img;
-    this.description = charactersObj.description;
+    console.log(charactersObj);
+    charactersObj.name = name;
+    charactersObj.img = img;
+    charactersObj.description = description;
     var currentCharacter = [];
     currentCharacter.push(this);
   };

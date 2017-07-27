@@ -7,17 +7,28 @@
 // })
 
 (function(module) {
-  document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    DisplayCharacter(charactersObj);
+
+  let charactersArray = [];
+  $.getJSON('/data/characters.json', function(characters) {
+    characters.forEach(function(charactersDataObject) {
+      charactersArray.push(characters);
+      console.log(charactersArray);
+      // DisplayCharacter(charactersObj);
+    });
   });
 
-  function DisplayCharacter(charactersObj) {
-    console.log(charactersObj);
-    charactersObj.name = name;
-    charactersObj.img = img;
-    charactersObj.description = description;
-    var currentCharacter = [];
-    currentCharacter.push(this);
+  document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+  });
+
+  function DisplayCharacter(characters) {
+    // console.log(charactersObj);
+    // charactersObj.name = name;
+    // charactersObj.img = img;
+    // charactersObj.description = description;
+    // var currentCharacter = [];
+    // currentCharacter.push(this);
+    console.log('hey');
   };
+  DisplayCharacter(characters);
 }(window));

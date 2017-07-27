@@ -9,9 +9,9 @@
 (function(module) {
 
   function DisplayCharacter(characters) {
-    charactersArray.name = name;
-    charactersArray.img = img;
-    charactersArray.description = description;
+    characters.name = name;
+    characters.img = img;
+    characters.description = description;
     // var currentCharacter = [];
     // currentCharacter.push(this);
     console.log('hey');
